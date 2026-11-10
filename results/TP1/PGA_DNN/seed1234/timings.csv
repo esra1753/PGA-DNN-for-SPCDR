@@ -1,0 +1,14 @@
+stage,time_s
+1) Initial data generation,3.2232
+"a) IELDTM, 10 eps values x 500 points",3.2225
+b) Collocation points (N_f = 10000),0.0007
+"c) IELDTM, fixed DD data (90 eps values)",0.0000
+2) Pre-training (A = 10000 iterations),64.8826
+3) Adaptive training (90 steps),1222.6600
+a) Residual evaluation / selection of eps*,1.1466
+b) Mesh generation,0.2489
+"c) IELDTM solutions (90 solves, 18000 labels)",20.8600
+d) Network updates (90000 iterations),1200.4044
+Total IELDTM time,24.0825
+Total network training time,1265.2870
+Total offline cost,1290.7658
