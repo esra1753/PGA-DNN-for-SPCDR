@@ -1,0 +1,39 @@
+\begin{table}[ht]
+\centering
+\caption{Maximum absolute errors $\|E\|_\infty$ and $L_2$ errors $\|E\|_2$ of PGA-DNN and PA-DNN for TP1, TP2 and TP3
+(mean $\pm$ standard deviation over 4 independent runs with random seeds 1234, 2468, 4123 and 5678).
+The errors are evaluated with respect to the exact solution on a grid that resolves the boundary layer(s).}
+\label{tab:dnn_all}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{ccccc}
+\hline
+ & \multicolumn{2}{c}{PGA-DNN} & \multicolumn{2}{c}{PA-DNN} \\
+\cline{2-3}\cline{4-5}
+$\epsilon$ & $\|E\|_\infty$ & $\|E\|_2$ & $\|E\|_\infty$ & $\|E\|_2$ \\
+\multicolumn{5}{l}{\textbf{TP1}} \\
+\hline
+$3\times10^{-1}$ & $6.14\times10^{-3} \pm 4.52\times10^{-3}$ & $2.53\times10^{-3} \pm 2.24\times10^{-3}$ & $2.99\times10^{-2} \pm 1.62\times10^{-2}$ & $1.08\times10^{-2} \pm 0.58\times10^{-2}$ \\
+$7\times10^{-2}$ & $8.96\times10^{-3} \pm 6.19\times10^{-3}$ & $1.70\times10^{-3} \pm 0.96\times10^{-3}$ & $3.31\times10^{-2} \pm 2.34\times10^{-2}$ & $3.76\times10^{-3} \pm 2.99\times10^{-3}$ \\
+$2\times10^{-2}$ & $3.19\times10^{-3} \pm 1.23\times10^{-3}$ & $9.80\times10^{-4} \pm 8.50\times10^{-4}$ & $8.88\times10^{-3} \pm 5.91\times10^{-3}$ & $6.87\times10^{-4} \pm 2.85\times10^{-4}$ \\
+$3\times10^{-3}$ & $8.43\times10^{-3} \pm 3.00\times10^{-3}$ & $9.11\times10^{-4} \pm 8.89\times10^{-4}$ & $1.64\times10^{-1} \pm 0.76\times10^{-1}$ & $4.41\times10^{-3} \pm 2.18\times10^{-3}$ \\
+$6\times10^{-4}$ & $1.72\times10^{-2} \pm 1.23\times10^{-2}$ & $9.69\times10^{-4} \pm 8.81\times10^{-4}$ & $8.10\times10^{-1} \pm 0.22\times10^{-1}$ & $2.46\times10^{-2} \pm 0.17\times10^{-2}$ \\
+\hline
+\multicolumn{5}{l}{\textbf{TP2}} \\
+\hline
+$3\times10^{-1}$ & $5.26\times10^{-2} \pm 3.31\times10^{-2}$ & $1.83\times10^{-2} \pm 0.93\times10^{-2}$ & $3.02\times10^{-2} \pm 1.78\times10^{-2}$ & $1.28\times10^{-2} \pm 0.68\times10^{-2}$ \\
+$7\times10^{-2}$ & $1.70\times10^{-2} \pm 0.85\times10^{-2}$ & $5.62\times10^{-3} \pm 3.10\times10^{-3}$ & $1.74\times10^{-2} \pm 0.57\times10^{-2}$ & $3.54\times10^{-3} \pm 1.01\times10^{-3}$ \\
+$2\times10^{-2}$ & $1.38\times10^{-2} \pm 0.63\times10^{-2}$ & $2.60\times10^{-3} \pm 0.46\times10^{-3}$ & $2.12\times10^{-2} \pm 0.34\times10^{-2}$ & $1.74\times10^{-3} \pm 0.42\times10^{-3}$ \\
+$3\times10^{-3}$ & $5.58\times10^{-2} \pm 2.52\times10^{-2}$ & $2.43\times10^{-3} \pm 0.70\times10^{-3}$ & $1.21\times10^{-1} \pm 0.74\times10^{-1}$ & $4.88\times10^{-3} \pm 2.02\times10^{-3}$ \\
+$10^{-3}$ & $1.47\times10^{-1} \pm 0.42\times10^{-1}$ & $2.68\times10^{-3} \pm 1.02\times10^{-3}$ & $3.79\times10^{-1} \pm 0.10\times10^{-1}$ & $1.64\times10^{-2} \pm 0.14\times10^{-2}$ \\
+\hline
+\multicolumn{5}{l}{\textbf{TP3}} \\
+\hline
+$10^{-1}$ & $4.17\times10^{-3} \pm 0.89\times10^{-3}$ & $2.08\times10^{-3} \pm 0.67\times10^{-3}$ & $3.33\times10^{-3} \pm 1.96\times10^{-3}$ & $1.42\times10^{-3} \pm 0.82\times10^{-3}$ \\
+$10^{-2}$ & $4.78\times10^{-3} \pm 1.74\times10^{-3}$ & $1.67\times10^{-3} \pm 0.39\times10^{-3}$ & $3.02\times10^{-3} \pm 0.80\times10^{-3}$ & $8.43\times10^{-4} \pm 3.22\times10^{-4}$ \\
+$10^{-3}$ & $6.52\times10^{-3} \pm 2.64\times10^{-3}$ & $1.45\times10^{-3} \pm 0.15\times10^{-3}$ & $8.35\times10^{-3} \pm 5.58\times10^{-3}$ & $1.36\times10^{-3} \pm 0.55\times10^{-3}$ \\
+$10^{-4}$ & $1.61\times10^{-2} \pm 0.76\times10^{-2}$ & $2.19\times10^{-3} \pm 0.59\times10^{-3}$ & $1.36\times10^{-2} \pm 0.78\times10^{-2}$ & $1.54\times10^{-3} \pm 0.48\times10^{-3}$ \\
+$10^{-5}$ & $3.48\times10^{-2} \pm 1.82\times10^{-2}$ & $4.10\times10^{-3} \pm 1.19\times10^{-3}$ & $3.43\times10^{-2} \pm 1.64\times10^{-2}$ & $3.26\times10^{-3} \pm 1.16\times10^{-3}$ \\
+\hline
+\end{tabular}%
+}
+\end{table}

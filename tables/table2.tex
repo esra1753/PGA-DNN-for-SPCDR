@@ -1,0 +1,29 @@
+\begin{table}[ht]
+\centering
+\caption{Breakdown of the offline computational cost (in seconds) of the PGA-DNN and PA-DNN approaches for TP1.
+Both models use the same network ($60\times3$, tanh), the same optimizer settings ($A = 10000$, $k = 1000$,
+$k_{\max} = 100000$), and the same number of labeled data added during the adaptive phase (90 adaptive steps,
+18000 labels): $N_a = 100$, $M = 100$ adaptive points per step for PGA-DNN and $N_a = 200$ uniform points per
+step for PA-DNN.}
+\label{tab:cost_tp1}
+\begin{tabular}{lcc}
+\hline
+ & PGA-DNN & PA-DNN \\
+Stage & ($N_a = 100$, $M = 100$, adaptive) & ($N_a = 200$, uniform) \\
+\hline
+\textbf{1) Initial data generation} & \textbf{3.22} & \textbf{1.71} \\
+\quad a) IELDTM, 10 $\epsilon$ values $\times$ 500 points & 3.22 & 1.71 \\
+\quad b) Collocation points ($N_f = 10000$) & 0.001 & 0.001 \\
+\textbf{2) Pre-training ($A = 10000$ iterations)} & \textbf{64.88} & \textbf{61.60} \\
+\textbf{3) Adaptive training (90 steps)} & \textbf{1222.66} & \textbf{1177.82} \\
+\quad a) Residual evaluation / selection of $\epsilon^*$ & 1.15 & 1.13 \\
+\quad b) Mesh generation & 0.25 & 0.01 \\
+\quad c) IELDTM solutions (90 solves, 18000 labels) & 20.86 & 20.77 \\
+\quad d) Network updates (90000 iterations) & 1200.40 & 1155.91 \\
+\hline
+Total IELDTM time & 24.08 & 22.48 \\
+Total network training time & 1265.29 & 1217.50 \\
+\textbf{Total offline cost} & \textbf{1290.77} & \textbf{1241.13} \\
+\hline
+\end{tabular}
+\end{table}
