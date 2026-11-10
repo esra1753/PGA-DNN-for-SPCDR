@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# intermediate checkpoints (only the final models it_100000.pt are part of the repository)
+results/**/checkpoints/it_0*.pt
+!results/**/checkpoints/it_100000.pt

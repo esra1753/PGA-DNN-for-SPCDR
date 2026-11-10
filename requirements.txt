@@ -1,0 +1,4 @@
+# Versions used for the results of the paper (Python 3.13.15, CPU)
+numpy==2.5.4
+torch==2.14.1
+matplotlib==3.11.2
